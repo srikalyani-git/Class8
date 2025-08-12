@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Animation in html</title>
+    <style>
+        @keyframes text1 {
+            0% {
+                background-color: blue;
+            }
+
+            25% {
+                background-color: aqua;
+            }
+
+            50% {
+                background-color: aquamarine;
+            }
+
+            75% {
+                background-color: azure;
+            }
+
+            100% {
+                background-color: bisque;
+            }
+        }
+
+        div {
+            height: 50px;
+            width: 50px;
+            position: right;
+            background-color: red;
+            animation-name: text1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello world</div>
+</body>
+
+</html>
