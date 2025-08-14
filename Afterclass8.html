@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>
+        Cascading effect
+    </title>
+    <style>
+        @keyframes bg {
+            0% {
+                background-image: repeating-linear-gradient(rgb(217, 251, 255), rgb(225, 233, 255), rgb(237, 222, 238));
+            }
+
+            50% {
+                background-image: repeating-linear-gradient(rgb(225, 233, 255), rgb(237, 222, 238), rgb(217, 251, 255));
+            }
+
+            100% {
+                background-image: repeating-linear-gradient(rgb(237, 222, 238), rgb(217, 251, 255), rgb(225, 233, 255));
+            }
+        }
+
+        body {
+            animation-name: bg;
+            animation-duration: 3s;
+            background-color: aqua;
+            animation-iteration-count: infinite;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 100px;
+            color: rgb(56, 2, 107);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @keyframes secondary {
+            0% {
+                background-color: orangered;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: purple;
+            }
+        }
+
+        @keyframes primary {
+            0% {
+                background-color: red;
+
+            }
+
+            50% {
+                background-color: yellow;
+
+            }
+
+            100% {
+                background-color: blue;
+
+            }
+        }
+
+        #div1 {
+            height: 100px;
+            width: 100px;
+            animation-name: primary;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #div2 {
+            height: 100px;
+            width: 100px;
+            animation-name: secondary;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <h1 id="title">Color theory!</h1>
+    <br>
+    <br>
+    <div id="div1">Primary colors</div>
+    <br>
+    <div id="div2">Secondary colors</div>
+</body>
+
+</html>
